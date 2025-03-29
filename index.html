@@ -156,6 +156,183 @@
         </div>
     </section>
 
+    <section class="p-6">
+        <!-- Flash Sales Head -->
+        <div class="flex items-center gap-6">
+            <!-- Left: Text Section -->
+            <div>
+                <p class="text-red-500 font-bold text-sm">Today's</p>
+                <h2 class="text-2xl md:text-4xl font-bold flex items-center gap-10">
+                    Flash Sales
+                    <!-- Countdown Timer -->
+                    <div class="flex space-x-3 text-black font-bold">
+                        <div class="flex flex-col items-center">
+                            <span class="text-xs md:text-sm font-normal">Days</span>
+                            <span id="days" class="text-2xl md:text-2xl">00</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-xs md:text-sm font-normal">Hours</span>
+                            <span id="hours" class="text-2xl md:text-2xl">00</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-xs md:text-sm font-normal">Minutes</span>
+                            <span id="minutes" class="text-2xl md:text-2xl">00</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-xs md:text-sm font-normal">Seconds</span>
+                            <span id="seconds" class="text-2xl md:text-2xl">00</span>
+                        </div>
+                    </div>
+                </h2>
+            </div>
+        </div>
+
+        <!-- Flash Sales Products Section -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6">
+        <!-- Product Card 1 -->
+        <div class="relative bg-white p-4 border rounded-md shadow-md">
+            <!-- Discount Badge -->
+            <div class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">-40%</div>
+            <!-- Icons -->
+            <div class="absolute top-2 right-2 flex flex-col gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-500 hover:text-red-500 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l8.84 8.84a.75.75 0 001.06 0l8.84-8.84a5.5 5.5 0 000-7.78z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-500 hover:text-black cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7s-8.268-2.943-9.542-7z" />
+                </svg>
+            </div>
+            <!-- Product Image -->
+            <img src="Assets/images/gamepad.png" alt="Wireless Headphones" class="w-full h-40 object-contain">
+            <!-- Product Name -->
+            <p class="mt-2 text-sm md:text-base font-semibold">HAVIT HV-G92 Gamepad</p>
+            <!-- Price -->
+            <div class="flex items-center gap-2 mt-1">
+                <p class="text-red-500 font-bold">Ksh 3,000</p>
+                <p class="text-gray-400 line-through">Ksh 5,000</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center text-yellow-500 text-sm mt-1">
+                ★★★★☆ <span class="text-gray-600 ml-1">(50)</span>
+            </div>
+            <!-- Add to Cart Button -->
+            <button class="mt-2 bg-black text-white text-sm py-1 px-3 rounded hover:bg-blue-700 w-full">
+                Add to Cart
+            </button>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="relative bg-white p-4 border rounded-md shadow-md">
+            <div class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">-30%</div>
+            <div class="absolute top-2 right-2 flex flex-col gap-2">
+                <svg class="w-6 h-6 text-gray-500 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l8.84 8.84a.75.75 0 001.06 0l8.84-8.84a5.5 5.5 0 000-7.78z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-500 hover:text-black cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7s-8.268-2.943-9.542-7z" />
+                </svg>
+            </div>
+            <img src="Assets/images/keyboard.png" alt="AK-900 Wired Keyboard" class="w-full h-40 object-contain">
+            <p class="mt-2 text-sm md:text-base font-semibold">AK-900 Wired Keyboard</p>
+            <div class="flex items-center gap-2 mt-1">
+                <p class="text-red-500 font-bold">Ksh 7,000</p>
+                <p class="text-gray-400 line-through">Ksh 10,000</p>
+            </div>
+            <div class="flex items-center text-yellow-500 text-sm mt-1">
+                ★★★★★ <span class="text-gray-600 ml-1">(120)</span>
+            </div>
+            <button class="mt-2 bg-black text-white text-sm py-1 px-3 rounded hover:bg-blue-700 w-full">
+                Add to Cart
+            </button>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="relative bg-white p-4 border rounded-md shadow-md">
+            <div class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">-30%</div>
+            <div class="absolute top-2 right-2 flex flex-col gap-2">
+                <svg class="w-6 h-6 text-gray-500 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l8.84 8.84a.75.75 0 001.06 0l8.84-8.84a5.5 5.5 0 000-7.78z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-500 hover:text-black cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7s-8.268-2.943-9.542-7z" />
+                </svg>
+            </div>
+            <img src="Assets/images/monitor.png" alt="IPS LCD Gaming Monitor" class="w-full h-40 object-contain">
+            <p class="mt-2 text-sm md:text-base font-semibold">IPS LCD Gaming Monitor</p>
+            <div class="flex items-center gap-2 mt-1">
+                <p class="text-red-500 font-bold">Ksh 4,500</p>
+                <p class="text-gray-400 line-through">Ksh 6,000</p>
+            </div>
+            <div class="flex items-center text-yellow-500 text-sm mt-1">
+                ★★★★☆ <span class="text-gray-600 ml-1">(75)</span>
+            </div>
+            <button class="mt-2 bg-black text-white text-sm py-1 px-3 rounded hover:bg-blue-700 w-full">
+                Add to Cart
+            </button>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="relative bg-white p-4 border rounded-md shadow-md">
+            <div class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">-30%</div>
+            <div class="absolute top-2 right-2 flex flex-col gap-2">
+                <svg class="w-6 h-6 text-gray-500 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l8.84 8.84a.75.75 0 001.06 0l8.84-8.84a5.5 5.5 0 000-7.78z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-500 hover:text-black cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7s-8.268-2.943-9.542-7z" />
+                </svg>
+            </div>
+            <img src="Assets/images/chair.png" alt="S-Series Comfort Chair" class="w-full h-40 object-contain">
+            <p class="mt-2 text-sm md:text-base font-semibold">S-Series Comfort Chair</p>
+            <div class="flex items-center gap-2 mt-1">
+                <p class="text-red-500 font-bold">Ksh 4,500</p>
+                <p class="text-gray-400 line-through">Ksh 6,000</p>
+            </div>
+            <div class="flex items-center text-yellow-500 text-sm mt-1">
+                ★★★★☆ <span class="text-gray-600 ml-1">(75)</span>
+            </div>
+            <button class="mt-2 bg-black text-white text-sm py-1 px-3 rounded hover:bg-blue-700 w-full">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+
+    </section>
+    
+    <!-- Countdown Timer Script -->
+    <script>
+        function startCountdown(duration) {
+            let countdown = duration;
+            function updateTimer() {
+                let days = Math.floor(countdown / (60 * 60 * 24));
+                let hours = Math.floor((countdown % (60 * 60 * 24)) / (60 * 60));
+                let minutes = Math.floor((countdown % (60 * 60)) / 60);
+                let seconds = countdown % 60;
+    
+                document.getElementById("days").textContent = days.toString().padStart(2, '0');
+                document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+                document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+                document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+    
+                if (countdown > 0) {
+                    countdown--;
+                    setTimeout(updateTimer, 1000);
+                }
+            }
+            updateTimer();
+        }
+    
+        // Set countdown for 3 days (adjust if needed)
+        startCountdown(3 * 24 * 60 * 60);
+    </script>
+    
+    
+    
+
     <!-- JavaScript for Auto-Scrolling Carousel and Mobile Menu -->
     <script>
         // Carousel Auto-Scroll
