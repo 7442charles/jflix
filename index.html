@@ -169,21 +169,22 @@
                     <div class="flex space-x-3 text-black font-bold">
                         <div class="flex flex-col items-center">
                             <span class="text-xs md:text-sm font-normal">Days</span>
-                            <span id="days" class="text-2xl md:text-2xl">00</span>
+                            <span id="flash-days" class="text-2xl md:text-2xl">00</span>
                         </div>
                         <div class="flex flex-col items-center">
                             <span class="text-xs md:text-sm font-normal">Hours</span>
-                            <span id="hours" class="text-2xl md:text-2xl">00</span>
+                            <span id="flash-hours" class="text-2xl md:text-2xl">00</span>
                         </div>
                         <div class="flex flex-col items-center">
                             <span class="text-xs md:text-sm font-normal">Minutes</span>
-                            <span id="minutes" class="text-2xl md:text-2xl">00</span>
+                            <span id="flash-minutes" class="text-2xl md:text-2xl">00</span>
                         </div>
                         <div class="flex flex-col items-center">
                             <span class="text-xs md:text-sm font-normal">Seconds</span>
-                            <span id="seconds" class="text-2xl md:text-2xl">00</span>
+                            <span id="flash-seconds" class="text-2xl md:text-2xl">00</span>
                         </div>
                     </div>
+                    
                 </h2>
             </div>
         </div>
@@ -480,6 +481,371 @@
         </div>
     </section>
     
+    <!-- CTA Section -->
+    <section class="bg-black text-white py-16">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            
+            <!-- Left: Text & Countdown -->
+            <div class="md:w-1/2 text-center md:text-left px-6">
+                <!-- Small Heading -->
+                <p class="text-[#00FF66] font-semibold text-sm uppercase">Categories</p>
+                <!-- Main Heading -->
+                <h1 class="text-3xl md:text-5xl font-bold mt-2">Enhance Your Music Experience</h1>
+
+                <!-- Countdown Timer (Now Using the Same Function) -->
+                <div class="flex justify-center md:justify-start gap-4 mt-6">
+                    <div class="w-16 h-16 flex flex-col items-center justify-center bg-gray-800 rounded-full">
+                        <span class="text-2xl font-bold" id="cta-days">00</span>
+                        <span class="text-sm">Days</span>
+                    </div>
+                    <div class="w-16 h-16 flex flex-col items-center justify-center bg-gray-800 rounded-full">
+                        <span class="text-2xl font-bold" id="cta-hours">00</span>
+                        <span class="text-sm">Hours</span>
+                    </div>
+                    <div class="w-16 h-16 flex flex-col items-center justify-center bg-gray-800 rounded-full">
+                        <span class="text-2xl font-bold" id="cta-minutes">00</span>
+                        <span class="text-sm">Minutes</span>
+                    </div>
+                    <div class="w-16 h-16 flex flex-col items-center justify-center bg-gray-800 rounded-full">
+                        <span class="text-2xl font-bold" id="cta-seconds">00</span>
+                        <span class="text-sm">Seconds</span>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <button class="mt-6 px-6 py-3 bg-[#00FF66] hover:bg-[#00FF66] text-white font-semibold rounded-md">
+                    Buy Now!
+                </button>
+            </div>
+
+            <!-- Right: Image -->
+            <div class="md:w-1/2 mt-8 md:mt-0">
+                <img src="Assets/images/CTA_JBL.png" alt="Headphones" class="w-full">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- OUR PRODUCTS -->
+    <section class="p-6">
+        <!-- Flash Sales Head -->
+        <div class="flex items-center gap-6">
+            <!-- Left: Text Section -->
+            <div>
+                <p class="text-red-500 font-bold text-sm">Our Products</p>
+                <h2 class="text-2xl md:text-4xl font-bold flex items-center gap-10">
+                    Explore Our Products
+                </h2>
+            </div>
+        </div>
+
+        <!-- Our Products Section Row one -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6">
+            <!-- Product Card 1 -->
+            <div class="relative bg-white p-4 border rounded-md shadow-md">
+                <!-- Discount Badge -->
+                <div class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">-40%</div>
+                <!-- Icons -->
+                <div class="absolute top-2 right-2 flex flex-col gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-500 hover:text-red-500 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l8.84 8.84a.75.75 0 001.06 0l8.84-8.84a5.5 5.5 0 000-7.78z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-500 hover:text-black cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7s-8.268-2.943-9.542-7z" />
+                    </svg>
+                </div>
+                <!-- Product Image -->
+                <img src="Assets/images/sweater.png" alt="The north coat" class="w-full h-40 object-contain">
+                <!-- Product Name -->
+                <p class="mt-2 text-sm md:text-base font-semibold">The north coat</p>
+                <!-- Price -->
+                <div class="flex items-center gap-2 mt-1">
+                    <p class="text-red-500 font-bold">Ksh 3,000</p>
+                    <p class="text-gray-400 line-through">Ksh 5,000</p>
+                </div>
+                <!-- Rating -->
+                <div class="flex items-center text-yellow-500 text-sm mt-1">
+                    ★★★★☆ <span class="text-gray-600 ml-1">(50)</span>
+                </div>
+                <!-- Add to Cart Button -->
+                <button class="mt-2 bg-black text-white text-sm py-1 px-3 rounded hover:bg-blue-700 w-full">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="relative bg-white p-4 border rounded-md shadow-md">
+                <div class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">-30%</div>
+                <div class="absolute top-2 right-2 flex flex-col gap-2">
+                    <svg class="w-6 h-6 text-gray-500 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l8.84 8.84a.75.75 0 001.06 0l8.84-8.84a5.5 5.5 0 000-7.78z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-500 hover:text-black cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7s-8.268-2.943-9.542-7z" />
+                    </svg>
+                </div>
+                <img src="Assets/images/guccie_bag.png" alt="Gucci duffle bag" class="w-full h-40 object-contain">
+                <p class="mt-2 text-sm md:text-base font-semibold">Gucci duffle bag</p>
+                <div class="flex items-center gap-2 mt-1">
+                    <p class="text-red-500 font-bold">Ksh 7,000</p>
+                    <p class="text-gray-400 line-through">Ksh 10,000</p>
+                </div>
+                <div class="flex items-center text-yellow-500 text-sm mt-1">
+                    ★★★★★ <span class="text-gray-600 ml-1">(120)</span>
+                </div>
+                <button class="mt-2 bg-black text-white text-sm py-1 px-3 rounded hover:bg-blue-700 w-full">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="relative bg-white p-4 border rounded-md shadow-md">
+                <div class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">-30%</div>
+                <div class="absolute top-2 right-2 flex flex-col gap-2">
+                    <svg class="w-6 h-6 text-gray-500 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l8.84 8.84a.75.75 0 001.06 0l8.84-8.84a5.5 5.5 0 000-7.78z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-500 hover:text-black cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7s-8.268-2.943-9.542-7z" />
+                    </svg>
+                </div>
+                <img src="Assets/images/cooling fan.png" alt="RGB liquid CPU Cooler" class="w-full h-40 object-contain">
+                <p class="mt-2 text-sm md:text-base font-semibold">RGB liquid CPU Cooler</p>
+                <div class="flex items-center gap-2 mt-1">
+                    <p class="text-red-500 font-bold">Ksh 4,500</p>
+                    <p class="text-gray-400 line-through">Ksh 6,000</p>
+                </div>
+                <div class="flex items-center text-yellow-500 text-sm mt-1">
+                    ★★★★☆ <span class="text-gray-600 ml-1">(75)</span>
+                </div>
+                <button class="mt-2 bg-black text-white text-sm py-1 px-3 rounded hover:bg-blue-700 w-full">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="relative bg-white p-4 border rounded-md shadow-md">
+                <div class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">-30%</div>
+                <div class="absolute top-2 right-2 flex flex-col gap-2">
+                    <svg class="w-6 h-6 text-gray-500 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l8.84 8.84a.75.75 0 001.06 0l8.84-8.84a5.5 5.5 0 000-7.78z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-500 hover:text-black cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7s-8.268-2.943-9.542-7z" />
+                    </svg>
+                </div>
+                <img src="Assets/images/bookshelf.png" alt="Small BookSelf" class="w-full h-40 object-contain">
+                <p class="mt-2 text-sm md:text-base font-semibold">Small BookSelf</p>
+                <div class="flex items-center gap-2 mt-1">
+                    <p class="text-red-500 font-bold">Ksh 4,500</p>
+                    <p class="text-gray-400 line-through">Ksh 6,000</p>
+                </div>
+                <div class="flex items-center text-yellow-500 text-sm mt-1">
+                    ★★★★☆ <span class="text-gray-600 ml-1">(75)</span>
+                </div>
+                <button class="mt-2 bg-black text-white text-sm py-1 px-3 rounded hover:bg-blue-700 w-full">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+        <!-- Our Products Section Row two -->
+         <!-- Our Products Section Row one -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6">
+            <!-- Product Card 1 -->
+            <div class="relative bg-white p-4 border rounded-md shadow-md">
+                <!-- Discount Badge -->
+                <div class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">-40%</div>
+                <!-- Icons -->
+                <div class="absolute top-2 right-2 flex flex-col gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-500 hover:text-red-500 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l8.84 8.84a.75.75 0 001.06 0l8.84-8.84a5.5 5.5 0 000-7.78z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-500 hover:text-black cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7s-8.268-2.943-9.542-7z" />
+                    </svg>
+                </div>
+                <!-- Product Image -->
+                <img src="Assets/images/sweater.png" alt="The north coat" class="w-full h-40 object-contain">
+                <!-- Product Name -->
+                <p class="mt-2 text-sm md:text-base font-semibold">The north coat</p>
+                <!-- Price -->
+                <div class="flex items-center gap-2 mt-1">
+                    <p class="text-red-500 font-bold">Ksh 3,000</p>
+                    <p class="text-gray-400 line-through">Ksh 5,000</p>
+                </div>
+                <!-- Rating -->
+                <div class="flex items-center text-yellow-500 text-sm mt-1">
+                    ★★★★☆ <span class="text-gray-600 ml-1">(50)</span>
+                </div>
+                <!-- Add to Cart Button -->
+                <button class="mt-2 bg-black text-white text-sm py-1 px-3 rounded hover:bg-blue-700 w-full">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="relative bg-white p-4 border rounded-md shadow-md">
+                <div class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">-30%</div>
+                <div class="absolute top-2 right-2 flex flex-col gap-2">
+                    <svg class="w-6 h-6 text-gray-500 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l8.84 8.84a.75.75 0 001.06 0l8.84-8.84a5.5 5.5 0 000-7.78z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-500 hover:text-black cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7s-8.268-2.943-9.542-7z" />
+                    </svg>
+                </div>
+                <img src="Assets/images/guccie_bag.png" alt="Gucci duffle bag" class="w-full h-40 object-contain">
+                <p class="mt-2 text-sm md:text-base font-semibold">Gucci duffle bag</p>
+                <div class="flex items-center gap-2 mt-1">
+                    <p class="text-red-500 font-bold">Ksh 7,000</p>
+                    <p class="text-gray-400 line-through">Ksh 10,000</p>
+                </div>
+                <div class="flex items-center text-yellow-500 text-sm mt-1">
+                    ★★★★★ <span class="text-gray-600 ml-1">(120)</span>
+                </div>
+                <button class="mt-2 bg-black text-white text-sm py-1 px-3 rounded hover:bg-blue-700 w-full">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="relative bg-white p-4 border rounded-md shadow-md">
+                <div class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">-30%</div>
+                <div class="absolute top-2 right-2 flex flex-col gap-2">
+                    <svg class="w-6 h-6 text-gray-500 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l8.84 8.84a.75.75 0 001.06 0l8.84-8.84a5.5 5.5 0 000-7.78z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-500 hover:text-black cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7s-8.268-2.943-9.542-7z" />
+                    </svg>
+                </div>
+                <img src="Assets/images/cooling fan.png" alt="RGB liquid CPU Cooler" class="w-full h-40 object-contain">
+                <p class="mt-2 text-sm md:text-base font-semibold">RGB liquid CPU Cooler</p>
+                <div class="flex items-center gap-2 mt-1">
+                    <p class="text-red-500 font-bold">Ksh 4,500</p>
+                    <p class="text-gray-400 line-through">Ksh 6,000</p>
+                </div>
+                <div class="flex items-center text-yellow-500 text-sm mt-1">
+                    ★★★★☆ <span class="text-gray-600 ml-1">(75)</span>
+                </div>
+                <button class="mt-2 bg-black text-white text-sm py-1 px-3 rounded hover:bg-blue-700 w-full">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="relative bg-white p-4 border rounded-md shadow-md">
+                <div class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">-30%</div>
+                <div class="absolute top-2 right-2 flex flex-col gap-2">
+                    <svg class="w-6 h-6 text-gray-500 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l8.84 8.84a.75.75 0 001.06 0l8.84-8.84a5.5 5.5 0 000-7.78z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-500 hover:text-black cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7s-8.268-2.943-9.542-7z" />
+                    </svg>
+                </div>
+                <img src="Assets/images/bookshelf.png" alt="Small BookSelf" class="w-full h-40 object-contain">
+                <p class="mt-2 text-sm md:text-base font-semibold">Small BookSelf</p>
+                <div class="flex items-center gap-2 mt-1">
+                    <p class="text-red-500 font-bold">Ksh 4,500</p>
+                    <p class="text-gray-400 line-through">Ksh 6,000</p>
+                </div>
+                <div class="flex items-center text-yellow-500 text-sm mt-1">
+                    ★★★★☆ <span class="text-gray-600 ml-1">(75)</span>
+                </div>
+                <button class="mt-2 bg-black text-white text-sm py-1 px-3 rounded hover:bg-blue-700 w-full">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="p-6 relative">
+        <!-- Section Heading -->
+        <div class="flex items-center gap-6 mb-6">
+            <div>
+                <p class="text-red-500 font-bold text-sm">Featured</p>
+                <h2 class="text-2xl md:text-4xl font-bold">New Arrivals</h2>
+            </div>
+        </div>
+
+        <!-- Layout Container -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 min-h-[500px]">
+            <!-- Left: Full Height Card -->
+            <div class="border-2 border-gray-300 overflow-hidden flex flex-col relative bg-black">
+                <!-- Image -->
+                <img src="Assets/images/ps5_arrival.png" alt="PlayStation 5" class="w-full  object-cover">
+                
+                <!-- Product Info -->
+                <div class="bg-black bg-opacity-70 text-white p-4 absolute bottom-0 left-0 w-full">
+                    <h3 class="text-xl font-bold">PlayStation 5</h3>
+                    <p class="text-gray-300 mt-1">Black and White version of the PS5 coming out on sale.</p>
+                    <a href="#" class="text-red-500 font-semibold mt-2 inline-block">Shop Now →</a>
+                </div>
+            </div>
+
+            <!-- Right: Split into Two Halves -->
+            <div class="grid grid-rows-2 gap-4">
+                <!-- Top Half -->
+                <div class="border-2 border-gray-300 overflow-hidden flex flex-row bg-black h-full">
+                    <!-- Text Section -->
+                    <div class="w-1/2 bg-black text-white p-6 flex flex-col justify-center">
+                        <h3 class="text-xl font-bold">Women’s Collections</h3>
+                        <p class="text-gray-300 mt-1">Featured women collections that give you another vibe.</p>
+                        <a href="#" class="text-red-500 font-semibold mt-2 inline-block">Shop Now →</a>
+                    </div>
+                
+                    <!-- Image Section -->
+                    <div class="w-1/2 bg-black">
+                        <img src="Assets/images/arival_womenscollection.png" alt="Women’s Collections" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                
+                <!-- Bottom Half (Split into Two Vertically) -->
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- Bottom Left: Speakers -->
+                    <div class="border-2 border-gray-300 overflow-hidden relative flex items-center justify-center bg-black">
+                        <!-- Image -->
+                        <img src="Assets/images/amazon_speakers.png" alt="Speakers" class="w-full h-full object-cover">
+                        
+                        <!-- Floating Product Info -->
+                        <div class="absolute bottom-0 left-0 bg-black bg-opacity-70 text-white p-3 w-full">
+                            <h3 class="text-lg font-bold">Speakers</h3>
+                            <p class="text-gray-300 text-sm">Amazon wireless speakers.</p>
+                            <a href="#" class="text-red-500 font-semibold text-sm inline-block mt-1">Shop Now →</a>
+                        </div>
+                    </div>
+                
+                    <!-- Bottom Right: Perfume -->
+                    <div class="border-2 border-gray-300 overflow-hidden relative flex items-center justify-center bg-black">
+                        <!-- Image -->
+                        <img src="Assets/images/gucci_perfume.png" alt="Perfume" class="w-full h-full object-cover">
+                        
+                        <!-- Floating Product Info -->
+                        <div class="absolute bottom-0 left-0 bg-black bg-opacity-70 text-white p-3 w-full">
+                            <h3 class="text-lg font-bold">Perfume</h3>
+                            <p class="text-gray-300 text-sm">Perfume Intense.</p>
+                            <a href="#" class="text-red-500 font-semibold text-sm inline-block mt-1">Shop Now →</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- Features Section -->
     <section class="py-12">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
@@ -566,32 +932,59 @@
     </footer>
 
     
-    <!-- Countdown Timer Script -->
+    <!-- Countdown Timer Script (Now Used for All Timers) -->
     <script>
-        function startCountdown(duration) {
-            let countdown = duration;
+        function startCountdown(targetDate, ids) {
             function updateTimer() {
-                let days = Math.floor(countdown / (60 * 60 * 24));
-                let hours = Math.floor((countdown % (60 * 60 * 24)) / (60 * 60));
-                let minutes = Math.floor((countdown % (60 * 60)) / 60);
-                let seconds = countdown % 60;
+                let now = new Date().getTime();
+                let countdown = targetDate - now;
     
-                document.getElementById("days").textContent = days.toString().padStart(2, '0');
-                document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
-                document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
-                document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
-    
-                if (countdown > 0) {
-                    countdown--;
-                    setTimeout(updateTimer, 1000);
+                if (countdown <= 0) {
+                    document.getElementById(ids.days).textContent = "00";
+                    document.getElementById(ids.hours).textContent = "00";
+                    document.getElementById(ids.minutes).textContent = "00";
+                    document.getElementById(ids.seconds).textContent = "00";
+                    return; // Stop countdown when it reaches zero
                 }
+    
+                let days = Math.floor(countdown / (1000 * 60 * 60 * 24));
+                let hours = Math.floor((countdown % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes = Math.floor((countdown % (1000 * 60 * 60)) / (1000 * 60));
+                let seconds = Math.floor((countdown % (1000 * 60)) / 1000);
+    
+                document.getElementById(ids.days).textContent = days.toString().padStart(2, '0');
+                document.getElementById(ids.hours).textContent = hours.toString().padStart(2, '0');
+                document.getElementById(ids.minutes).textContent = minutes.toString().padStart(2, '0');
+                document.getElementById(ids.seconds).textContent = seconds.toString().padStart(2, '0');
+    
+                setTimeout(updateTimer, 1000);
             }
+    
             updateTimer();
         }
     
-        // Set countdown for 3 days (adjust if needed)
-        startCountdown(3 * 24 * 60 * 60);
+        document.addEventListener("DOMContentLoaded", function () {
+            // TODO: Set the target date for the countdown
+            let targetDate = new Date("2025-04-01 00:00:00").getTime();
+    
+            // Start countdown for both sections
+            startCountdown(targetDate, {
+                days: "flash-days",
+                hours: "flash-hours",
+                minutes: "flash-minutes",
+                seconds: "flash-seconds"
+            });
+    
+            startCountdown(targetDate, {
+                days: "cta-days",
+                hours: "cta-hours",
+                minutes: "cta-minutes",
+                seconds: "cta-seconds"
+            });
+        });
     </script>
+    
+    
     <!-- JavaScript for Auto-Scrolling Carousel and Mobile Menu -->
     <script>
         // Carousel Auto-Scroll
